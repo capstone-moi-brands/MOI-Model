@@ -1,0 +1,64 @@
+# ==========================================
+# Data Directories & Documents
+# ==========================================
+# Abaikan seluruh berkas dokumen & subdirektori di dalam folder data
+data/*
+!data/.gitkeep
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ==========================================
+# Model Weights & Cache
+# ==========================================
+# EasyOCR / PyTorch pre-trained model weights
+.easyocr_models/
+models/
+*.pth
+*.pt
+*.bin
+*.onnx
+
+# ==========================================
+# Python Artifacts & Cache
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# Jupyter Notebook Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# IDE & OS Specific
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
